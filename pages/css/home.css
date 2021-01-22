@@ -1,0 +1,300 @@
+/* base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#ebebeb; /*#e0eedd;*/
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Exo 2', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #3C2109;
+}
+
+
+button{
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+
+/* cabecalho  */
+
+header .barra{
+    display: flex;
+    background-color:#FFFFFF; /* rgb(35, 177, 0);*/
+    /* color:rgb(233, 233, 233); */
+    height: 4rem;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+header .menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.5rem;;
+    width: 100%;
+}
+
+.menu-esq{
+    display: flex;
+    color: #FFFFFF;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.avatar{
+    background-image: url('../../images/profile.jpeg');
+    height: 2.5rem;;
+    width: 2.5rem;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 0.6em;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+/* mudar pra fazer animacao */
+#search-field{
+    width: 15rem;
+    width: 15rem;
+    border: 0px;
+    border-radius: 3px;
+    height: 2rem;
+    outline: none;
+    margin-right: 1rem;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #3C2109;
+    border-radius: 25px;
+    display: none;
+    padding: 0.5rem;
+
+    transition: 0.8s ease all;
+}
+
+#search-field:target{
+    display: table;
+}
+
+.search-button{
+    font-size: medium;
+}
+
+.logo-container{
+    position: fixed;
+    top: 0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Amatic SC', cursive;
+    color: rgb(35, 177, 0);
+}
+
+
+
+/* conteudo */
+
+.container-conteudo{
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem);
+}
+
+  
+            
+/* categorias */
+
+.container-categorias{
+    height: calc(100vh-4rem);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.borda-categorias{
+    display: flex;
+    border: 2px solid #FFFFFF;
+}
+
+.container-categorias .c{
+    transition: 0.8s;  
+}
+
+.container-categorias .categoria{
+    width: 25vw; /*calc(100vw / 3);*/
+    height: calc(100vh - 6rem - 4px);
+    flex-grow: 1;
+    
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container-categorias .categoria-peq{
+    width: 25vw;
+    height: 4.5rem;
+    flex-grow: 1;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.container-categorias .c:nth-child(1){
+    background: url(../../images/categorias/salada-fruta-01.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-categorias .c:nth-child(2){
+    background: url(../../images/categorias/sam-moqadam-wg551YMfeOc-unsplash-01.jpeg);
+    background-size: cover;
+    background-position: unset;
+}
+
+.container-categorias .c:nth-child(3){
+    background: url(../../images/categorias/igor-miske-N0u8bLrB_-g-unsplash-01.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-categorias .c:nth-child(4){
+    background: url(../../images/categorias/capa-01.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-categorias .categoria:hover{
+    width: 80vw;
+}
+
+.container-categorias .categoria-peq:hover{
+    width: 50vw;
+}
+
+.camada-categoria{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)100%);
+    transition: 1s;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+}
+
+.camada-categoria:hover{
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.7)100%) !important;
+    color: #FFFFFF;
+    font-size: 2em;
+    letter-spacing: 0.8rem;
+
+    /* transition: 0.8s ease all; */
+}
+
+.l.label-categoria{
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 4rem; 
+}
+
+.camada-categoria:hover .label-categoria{
+    padding-bottom: 2rem;
+}
+
+.l.label-categoria-peq{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 0;
+
+}
+
+.categoria-peq .camada-categoria{
+    align-items: center;    
+}
+
+
+
+
+/* corpo */
+
+.corpo{
+    display: none;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+.receita{
+    height: 5rem;
+    background-color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+
+
+/* carrossel */
+
+.item{
+    cursor: pointer;
+}
+
+.label-carrossel{
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.recomendados{
+    padding: 1rem 2rem 0;
+    display: none;
+}
+
+.sugestao{
+    border-radius: 5px;
+}
+
+.owl-item{
+    height: 9rem !important;
+    width: 9rem !important;
+}
+
+
+/* rodape */
+
+footer .barra{
+    background-color: #AAA;
+    padding-top: 1rem;
+    height: 5rem;   
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.8s;
+}

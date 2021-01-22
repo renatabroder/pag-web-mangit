@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mangit</title>
+
+    <link rel="stylesheet" href="./css/home.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    
+    <!-- owl css -->
+    <link rel="stylesheet" href="../../tools/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../tools/css/owl.theme.default.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="barra">
+
+            <div class="logo-container">
+                <div class="logo">
+                    MANGIT
+                </div>
+            </div>
+
+            <div class="menu-container">
+               
+                <div>
+                    <button class="botao usuario">
+                        <i class="fas fa-sort-down"></i>
+                        <div class="avatar"></div>
+                    </button>
+                </div>              
+                
+                <div class="search-bar">
+                    <input type="text" id="search-field" onfocusout="focusoutSearchButton()">
+
+                    <button class="botao search-button" onclick="searchButton()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+            </div>
+        
+        </div>
+
+    </header>
+    
+    <main>
+
+        <div class="container-conteudo">
+            
+            <div class="container-categorias">
+
+                <div class="borda-categorias">
+                    <div class="c categoria">
+                        <button class="camada-categoria" onclick="cliqueCategoria('cafe-da-manha')">
+                            <div class="l label-categoria">Café da manhã</div>
+                        </button>
+                    </div>
+
+                    <div class="c categoria">
+                        <button class="camada-categoria" onclick="cliqueCategoria('refeicao')">
+                            <div class="l label-categoria">Refeição</div> 
+                        </button>
+                    </div>
+                    
+                    <div class="c categoria">
+                        <button class="camada-categoria" onclick="cliqueCategoria('lanche')">
+                            <div class="l label-categoria">Lanche</div>
+                        </button>
+                    </div>
+
+                    <div class="c categoria">
+                        <button class="camada-categoria" onclick="cliqueCategoria('dicas')">
+                            <div class="l label-categoria">Dicas</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="corpo" id="busca">
+
+            </div>
+
+            <div class="corpo" id="cafe-da-manha">
+                <div class="receita">Receita 1</div>
+                <div class="receita">Receita 2</div>
+                <div class="receita">Receita 3</div>
+            </div>
+
+            <div class="corpo" id="refeicao">
+                <div class="receita">Receita 1</div>
+                <div class="receita">Receita 2</div>
+                <div class="receita">Receita 3</div>
+            </div>
+
+            <div class="corpo" id="lanche">
+                <div class="receita">Receita 1</div>
+                <div class="receita">Receita 2</div>
+                <div class="receita">Receita 3</div>
+            </div>
+
+            <div class="corpo" id="dicas">
+                <div class="receita">Dica 1</div>
+                <div class="receita">Dica 2</div>
+                <div class="receita">Dica 3</div>
+            </div>
+
+            <div class="recomendados">
+                <div class="carrossel-recomendados">
+                    <div class="label-carrossel">
+                        Recomendados para você
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img class="sugestao" src="../../images/quadradas/lasanha.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="sugestao" src="../../images/quadradas/abobrinha.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="sugestao" src="../../images/quadradas/chapati.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="sugestao" src="../../images/quadradas/cha.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="sugestao" src="../../images/quadradas/batata-crocante.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="sugestao" src="../../images/quadradas/milho.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="sugestao" src="../../images/quadradas/oatmeal.jpeg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>            
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="barra">
+            Desenvolvido por Renata Broder
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/7eaa9ec5a9.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> 
+
+
+    <script src="../../tools/js/jquery.min.js"></script>
+    <script src="../../tools/js/owl.carousel.min.js"></script>
+
+
+    <script src="./js/home.js"></script>
+
+
+    
+</body>
+</html>
