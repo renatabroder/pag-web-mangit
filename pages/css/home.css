@@ -39,7 +39,7 @@ header .barra{
     right: 0;
 }
 
-header .menu-container{
+header .barra-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,10 +52,15 @@ header .menu-container{
     color: #FFFFFF;
 }
 
+.menu-container{
+    display: flex;
+    align-items: center;
+}
+
 .usuario{
     display: flex;
     align-items: center;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 .avatar{
@@ -67,32 +72,97 @@ header .menu-container{
     margin-left: 0.6em;
 }
 
+#menu-usuario{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 3rem;
+    left: 0.7rem;
+    justify-content: space-around;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    color: #AAA;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    
+    transition: 0.4s ease all;
+    opacity: 1
+}
+
+#menu-usuario.hide{
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.container-menu{
+    padding: 1rem 0.5rem;
+    display: none;
+}
+
+.linha{
+    background-color: rgb(207, 207, 207);
+    height: 1px;
+    margin-bottom: 0.5rem;
+}
+.item-menu{
+    /* width: 8rem; */
+    padding: 0 1rem 0 0;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-menu:hover{
+    color: #3d3d3d;
+}
+
+.icone-menu{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 0.3rem;
+}
+
+.nome{
+    /* height: 3rem; */
+    padding: 0 0.3rem 0.3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .search-bar{
     display: flex;
     align-items: center;
     margin-right: 2rem;
 }
 
-/* mudar pra fazer animacao */
 #search-field{
-    width: 15rem;
-    width: 15rem;
-    border: 0px;
-    border-radius: 3px;
+    max-width: 15rem;
     height: 2rem;
     outline: none;
     margin-right: 1rem;
     background-color: rgb(245, 245, 245);
-    border: 1px solid #3C2109;
+    border: 0px;
+    /* 1px solid #3C2109; */
     border-radius: 25px;
-    display: none;
     padding: 0.5rem;
-
-    transition: 0.8s ease all;
+    
+    transition: 0.4s ease all;
+    overflow: hidden;
 }
 
-#search-field:target{
-    display: table;
+#search-field.hide{
+    max-width: 0;
+    padding: 0;
+    border: 0px;
+    pointer-events: none;
+}
+
+#search-field:focus{
+    box-shadow: 0 0 2px #999999;
+    border-radius: 25px;
 }
 
 .search-button{
@@ -236,9 +306,10 @@ header .menu-container{
 }
 
 .categoria-peq .camada-categoria{
-    align-items: center;    
-}
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)100%);
 
+}
 
 
 
@@ -284,10 +355,14 @@ header .menu-container{
     width: 9rem !important;
 }
 
+.item:hover{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)100%);
+}
+
 
 /* rodape */
 
-footer .barra{
+footer .barra-footer{
     background-color: #AAA;
     padding-top: 1rem;
     height: 5rem;   

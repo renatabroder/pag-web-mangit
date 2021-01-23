@@ -26,22 +26,56 @@
         <div class="barra">
 
             <div class="logo-container">
-                <div class="logo">
+                <button class="logo" onclick="home()">
                     MANGIT
-                </div>
+                </button>
             </div>
 
-            <div class="menu-container">
+            <div class="barra-container">
                
-                <div>
-                    <button class="botao usuario">
+                <div class="menu-container">
+                    <button class="botao usuario" onclick="abreMenu()">
                         <i class="fas fa-sort-down"></i>
                         <div class="avatar"></div>
                     </button>
-                </div>              
+
+                    <button class="">
+                        <i class="fas fa-heart"></i>
+                    </button>
+
+                    <div class="hide" id="menu-usuario">
+                        <div class="container-menu">
+                            <div class="nome">Renata</div>
+                            <div class="linha"></div>
+                            
+                            <div class="item-menu">
+                                <div class="icone-menu">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                
+                                Conta
+                            </div>
+                            
+                            <div class="item-menu">
+                                <div class="icone-menu">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                Configurações
+                            </div>
+                            
+                            <div class="item-menu">
+                                <div class="icone-menu">
+                                    <i class="fas fa-door-open"></i>
+                                </div>
+                                Sair
+                            </div>
+                        </div>
+                    </div>
+
+                </div>         
                 
                 <div class="search-bar">
-                    <input type="text" id="search-field" onfocusout="focusoutSearchButton()">
+                    <input type="text" id="search-field" class="hide" onfocusout="focusoutSearchButton()">
 
                     <button class="botao search-button" onclick="searchButton()">
                         <i class="fas fa-search"></i>
@@ -88,72 +122,74 @@
 
             </div>
 
-            <div class="corpo" id="busca">
+            <div class="container-receitas">
+                <div class="corpo" id="busca">
 
-            </div>
-
-            <div class="corpo" id="cafe-da-manha">
-                <div class="receita">Receita 1</div>
-                <div class="receita">Receita 2</div>
-                <div class="receita">Receita 3</div>
-            </div>
-
-            <div class="corpo" id="refeicao">
-                <div class="receita">Receita 1</div>
-                <div class="receita">Receita 2</div>
-                <div class="receita">Receita 3</div>
-            </div>
-
-            <div class="corpo" id="lanche">
-                <div class="receita">Receita 1</div>
-                <div class="receita">Receita 2</div>
-                <div class="receita">Receita 3</div>
-            </div>
-
-            <div class="corpo" id="dicas">
-                <div class="receita">Dica 1</div>
-                <div class="receita">Dica 2</div>
-                <div class="receita">Dica 3</div>
-            </div>
-
-            <div class="recomendados">
-                <div class="carrossel-recomendados">
-                    <div class="label-carrossel">
-                        Recomendados para você
-                    </div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <img class="sugestao" src="../../images/quadradas/lasanha.jpeg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="sugestao" src="../../images/quadradas/abobrinha.jpeg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="sugestao" src="../../images/quadradas/chapati.jpeg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="sugestao" src="../../images/quadradas/cha.jpeg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="sugestao" src="../../images/quadradas/batata-crocante.jpeg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="sugestao" src="../../images/quadradas/milho.jpeg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="sugestao" src="../../images/quadradas/oatmeal.jpeg" alt="">
-                        </div>
-
-                    </div>
                 </div>
-            </div>            
 
+                <div class="corpo" id="cafe-da-manha">
+                    <div class="receita">Receita 1</div>
+                    <div class="receita">Receita 2</div>
+                    <div class="receita">Receita 3</div>
+                </div>
+
+                <div class="corpo" id="refeicao">
+                    <div class="receita">Receita 1</div>
+                    <div class="receita">Receita 2</div>
+                    <div class="receita">Receita 3</div>
+                </div>
+
+                <div class="corpo" id="lanche">
+                    <div class="receita">Receita 1</div>
+                    <div class="receita">Receita 2</div>
+                    <div class="receita">Receita 3</div>
+                </div>
+
+                <div class="corpo" id="dicas">
+                    <div class="receita">Dica 1</div>
+                    <div class="receita">Dica 2</div>
+                    <div class="receita">Dica 3</div>
+                </div>
+
+                <div class="recomendados">
+                    <div class="carrossel-recomendados">
+                        <div class="label-carrossel">
+                            Recomendados para você
+                        </div>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/lasanha.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/abobrinha.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/chapati.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/cha.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/batata-crocante.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/milho.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/oatmeal.jpeg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>            
+
+            </div>
         </div>
 
     </main>
 
     <footer>
-        <div class="barra">
+        <div class="barra-footer">
             Desenvolvido por Renata Broder
         </div>
     </footer>
