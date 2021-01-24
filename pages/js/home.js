@@ -18,6 +18,13 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+$(document).on('click', function (e) {
+    if ($(e.target).closest(".menu-container").length === 0) {
+        $('#menu-usuario').addClass('hide')
+        $('.container-menu').css('display', 'none')
+    }
+});
+
 home = (() => {
     $('.c').removeClass('categoria-peq').addClass('categoria');
     $('.l').removeClass('label-categoria-peq').addClass('label-categoria');
