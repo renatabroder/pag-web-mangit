@@ -138,10 +138,14 @@
                     <div class="receita">
                         <div class="titulo-receita">
                             Panquecas de banana
-                            <!-- <button class="marcar-favorito" onclick="">
-                                <i class="fas fa-heart"></i>
+                            
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
                                 <i class="far fa-heart"></i>
-                            </button> -->
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
 
                         </div>
                         <div class="intro-receita">
@@ -153,7 +157,17 @@
                     </div>
                     
                     <div class="receita">
-                        <div class="titulo-receita">Overnight Oats</div>
+                        <div class="titulo-receita">
+                            Overnight Oats
+                            
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <p class="texto-receita-dir">                                
                                 Porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt
@@ -163,7 +177,17 @@
                     </div>
 
                     <div class="receita">
-                        <div class="titulo-receita">Smoothie</div>
+                        <div class="titulo-receita">
+                            Smoothie
+                        
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <img class="foto-receita" src="../images/receitas/cafe-03.jpg" alt="">
                             <p class="texto-receita-esq">       
@@ -173,13 +197,33 @@
                     </div>
 
                     <div class="receita">
-                        <div class="titulo-receita">Creme de manga com granola</div>
+                        <div class="titulo-receita">
+                            Creme de manga com granola
+                            
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <p class="texto-receita-dir">                                
                                 Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat
                             </p>
                             <img class="foto-receita" src="../images/receitas/cafe-04.jpg" alt="">
                         </div>
+                    </div>
+
+                    <div class="receitas-pagination">
+                        <i class="fas fa-angle-double-left"></i>
+                        <div style="width: 0.7rem;"></div>
+                        <i class="fas fa-angle-left"></i>
+                        <div style="width: 2rem;"></div>
+                        <i class="fas fa-angle-right botao-ativo"></i>
+                        <div style="width: 0.7rem;"></div>
+                        <i class="fas fa-angle-double-right botao-ativo"></i>
                     </div>
                 </div>
 
@@ -190,7 +234,17 @@
                     </div>
 
                     <div class="receita">
-                        <div class="titulo-receita">Alcatra na manteiga</div>
+                        <div class="titulo-receita">
+                            Alcatra na manteiga
+                            
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <img class="foto-receita" src="../images/receitas/refeicao-01.jpg" alt="">
                             <p class="texto-receita-esq">
@@ -200,7 +254,17 @@
                     </div>
                     
                     <div class="receita">
-                        <div class="titulo-receita">Peixe assado no vapor</div>
+                        <div class="titulo-receita">
+                            Peixe assado no vapor
+                            
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <p class="texto-receita-dir">                                
                                 Porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt
@@ -210,7 +274,17 @@
                     </div>
 
                     <div class="receita">
-                        <div class="titulo-receita">Lasanha de abobrinha com frango desfiado</div>
+                        <div class="titulo-receita">
+                            Lasanha de abobrinha com frango desfiado
+                        
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <img class="foto-receita" src="../images/receitas/refeicao-03.jpg" alt="">
                             <p class="texto-receita-esq">       
@@ -220,13 +294,33 @@
                     </div>
 
                     <div class="receita">
-                        <div class="titulo-receita">Sopa de cenoura</div>
+                        <div class="titulo-receita">
+                            Sopa de cenoura
+                        
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <p class="texto-receita-dir">                                
                                 Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat
                             </p>
                             <img class="foto-receita" src="../images/receitas/refeicao-04.jpg" alt="">
                         </div>
+                    </div>
+
+                    <div class="receitas-pagination">
+                        <i class="fas fa-angle-double-left"></i>
+                        <div style="width: 0.7rem;"></div>
+                        <i class="fas fa-angle-left"></i>
+                        <div style="width: 2rem;"></div>
+                        <i class="fas fa-angle-right botao-ativo"></i>
+                        <div style="width: 0.7rem;"></div>
+                        <i class="fas fa-angle-double-right botao-ativo"></i>
                     </div>
                 </div>
 
@@ -236,7 +330,17 @@
                         <p class="t-categoria">Lanche</p>
                     </div>
                     <div class="receita">
-                        <div class="titulo-receita">Chapati</div>
+                        <div class="titulo-receita">
+                            Chapati
+                            
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <img class="foto-receita" src="../images/receitas/lanche-01.jpg" alt="">
                             <p class="texto-receita-esq">
@@ -246,7 +350,17 @@
                     </div>
                     
                     <div class="receita">
-                        <div class="titulo-receita">Chá de anis estrelado</div>
+                        <div class="titulo-receita">
+                            Chá de anis estrelado
+                        
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <p class="texto-receita-dir">                                
                                 Porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt
@@ -256,7 +370,17 @@
                     </div>
 
                     <div class="receita">
-                        <div class="titulo-receita">Milho assado</div>
+                        <div class="titulo-receita">
+                            Milho assado
+
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <img class="foto-receita" src="../images/receitas/lanche-03.jpg" alt="">
                             <p class="texto-receita-esq">       
@@ -266,13 +390,33 @@
                     </div>
 
                     <div class="receita">
-                        <div class="titulo-receita">Pastel integral</div>
+                        <div class="titulo-receita">
+                            Pastel integral
+                        
+                            <button class="botao-fav nao-favorito" onclick="marcarFavorito($(this).parent())">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <button class="botao-fav favorito" onclick="desmarcarFavorito($(this).parent())">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
                         <div class="intro-receita">
                             <p class="texto-receita-dir">
                                 Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat
                             </p>
                             <img class="foto-receita" src="../images/receitas/lanche-04.jpg" alt="">
                         </div>
+                    </div>
+
+                    <div class="receitas-pagination">
+                        <i class="fas fa-angle-double-left"></i>
+                        <div style="width: 0.7rem;"></div>
+                        <i class="fas fa-angle-left"></i>
+                        <div style="width: 2rem;"></div>
+                        <i class="fas fa-angle-right botao-ativo"></i>
+                        <div style="width: 0.7rem;"></div>
+                        <i class="fas fa-angle-double-right botao-ativo"></i>
                     </div>
                 </div>
 
@@ -284,6 +428,16 @@
                     <div class="receita">Dica 1</div>
                     <div class="receita">Dica 2</div>
                     <div class="receita">Dica 3</div>
+
+                    <div class="receitas-pagination">
+                        <i class="fas fa-angle-double-left"></i>
+                        <div style="width: 0.7rem;"></div>
+                        <i class="fas fa-angle-left"></i>
+                        <div style="width: 2rem;"></div>
+                        <i class="fas fa-angle-right botao-ativo"></i>
+                        <div style="width: 0.7rem;"></div>
+                        <i class="fas fa-angle-double-right botao-ativo"></i>
+                    </div>
                 </div>
 
                 <div class="recomendados">

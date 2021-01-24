@@ -73,3 +73,13 @@ cliqueCategoria = ((tipo) => {
 pesquisa = (() => {
     console.log('pesquisa')
 });
+
+marcarFavorito = ((botao) =>{
+    $(botao.children()[0]).css('display', 'none')
+    $(botao.children()[1]).css('display', 'block')
+})
+
+desmarcarFavorito = ((botao) =>{
+    $(botao.children()[0]).css('display', 'block')
+    $(botao.children()[1]).css('display', 'none')
+})

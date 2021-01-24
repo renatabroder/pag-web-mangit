@@ -409,9 +409,31 @@ header .barra-container{
     padding: 0 3rem 0 0 ;
 }
 
-.marcar-favorito{
+.botao-fav{
     font-size: 1.3rem;
 }
+
+.favorito{
+    display: none;
+}
+
+.receitas-pagination{
+    display: flex;
+    justify-content: center;
+    color: #838383;
+    font-size: 1.5em;
+}
+
+.receitas-pagination .botao-ativo{
+    color: #3d3d3d;
+    cursor: pointer;
+}
+
+.receitas-pagination .botao-ativo:hover{
+    color: var(--verde);
+}
+
+
 
 
 /* carrossel */
