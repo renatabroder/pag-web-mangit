@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet">
     
     <!-- owl css -->
     <link rel="stylesheet" href="../../tools/css/owl.carousel.min.css">
@@ -39,8 +40,9 @@
                         <div class="avatar"></div>
                     </button>
 
-                    <button class="">
+                    <button class="botaoTooltipFav">
                         <i class="fas fa-heart"></i>
+                        <span class="tooltiptext fav">Favoritas</span>
                     </button>
 
                     <div class="hide" id="menu-usuario">
@@ -52,7 +54,6 @@
                                 <div class="icone-menu">
                                     <i class="fas fa-user"></i>
                                 </div>
-                                
                                 Conta
                             </div>
                             
@@ -123,29 +124,163 @@
             </div>
 
             <div class="container-receitas">
-                <div class="corpo" id="busca">
 
+                <div class="corpo" id="busca">
+                    
                 </div>
 
                 <div class="corpo" id="cafe-da-manha">
-                    <div class="receita">Receita 1</div>
-                    <div class="receita">Receita 2</div>
-                    <div class="receita">Receita 3</div>
+                    <div class="titulo-categoria">
+                        <p>Exibindo: </p>
+                        <p class="t-categoria">Café da manhã</p>
+                    </div>
+
+                    <div class="receita">
+                        <div class="titulo-receita">
+                            Panquecas de banana
+                            <!-- <button class="marcar-favorito" onclick="">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </button> -->
+
+                        </div>
+                        <div class="intro-receita">
+                            <img class="foto-receita" src="../images/receitas/cafe-01.jpg" alt="">
+                            <p class="texto-receita-esq">
+                                Pharetra convallis posuere Morbi leo urna molestie at elementum eu facilisis sed odio Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="receita">
+                        <div class="titulo-receita">Overnight Oats</div>
+                        <div class="intro-receita">
+                            <p class="texto-receita-dir">                                
+                                Porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt
+                            </p>
+                            <img class="foto-receita" src="../images/receitas/cafe-02.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="receita">
+                        <div class="titulo-receita">Smoothie</div>
+                        <div class="intro-receita">
+                            <img class="foto-receita" src="../images/receitas/cafe-03.jpg" alt="">
+                            <p class="texto-receita-esq">       
+                                Ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="receita">
+                        <div class="titulo-receita">Creme de manga com granola</div>
+                        <div class="intro-receita">
+                            <p class="texto-receita-dir">                                
+                                Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat
+                            </p>
+                            <img class="foto-receita" src="../images/receitas/cafe-04.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="corpo" id="refeicao">
-                    <div class="receita">Receita 1</div>
-                    <div class="receita">Receita 2</div>
-                    <div class="receita">Receita 3</div>
+                    <div class="titulo-categoria">
+                        <p>Exibindo: </p>
+                        <p class="t-categoria">Refeição</p>
+                    </div>
+
+                    <div class="receita">
+                        <div class="titulo-receita">Alcatra na manteiga</div>
+                        <div class="intro-receita">
+                            <img class="foto-receita" src="../images/receitas/refeicao-01.jpg" alt="">
+                            <p class="texto-receita-esq">
+                                Pharetra convallis posuere Morbi leo urna molestie at elementum eu facilisis sed odio Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="receita">
+                        <div class="titulo-receita">Peixe assado no vapor</div>
+                        <div class="intro-receita">
+                            <p class="texto-receita-dir">                                
+                                Porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt
+                            </p>
+                            <img class="foto-receita" src="../images/receitas/refeicao-02.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="receita">
+                        <div class="titulo-receita">Lasanha de abobrinha com frango desfiado</div>
+                        <div class="intro-receita">
+                            <img class="foto-receita" src="../images/receitas/refeicao-03.jpg" alt="">
+                            <p class="texto-receita-esq">       
+                                Ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="receita">
+                        <div class="titulo-receita">Sopa de cenoura</div>
+                        <div class="intro-receita">
+                            <p class="texto-receita-dir">                                
+                                Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat
+                            </p>
+                            <img class="foto-receita" src="../images/receitas/refeicao-04.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="corpo" id="lanche">
-                    <div class="receita">Receita 1</div>
-                    <div class="receita">Receita 2</div>
-                    <div class="receita">Receita 3</div>
+                    <div class="titulo-categoria">
+                        <p>Exibindo: </p>
+                        <p class="t-categoria">Lanche</p>
+                    </div>
+                    <div class="receita">
+                        <div class="titulo-receita">Chapati</div>
+                        <div class="intro-receita">
+                            <img class="foto-receita" src="../images/receitas/lanche-01.jpg" alt="">
+                            <p class="texto-receita-esq">
+                                Pharetra convallis posuere Morbi leo urna molestie at elementum eu facilisis sed odio Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="receita">
+                        <div class="titulo-receita">Chá de anis estrelado</div>
+                        <div class="intro-receita">
+                            <p class="texto-receita-dir">                                
+                                Porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt
+                            </p>
+                            <img class="foto-receita" src="../images/receitas/lanche-02.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="receita">
+                        <div class="titulo-receita">Milho assado</div>
+                        <div class="intro-receita">
+                            <img class="foto-receita" src="../images/receitas/lanche-03.jpg" alt="">
+                            <p class="texto-receita-esq">       
+                                Ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="receita">
+                        <div class="titulo-receita">Pastel integral</div>
+                        <div class="intro-receita">
+                            <p class="texto-receita-dir">
+                                Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat
+                            </p>
+                            <img class="foto-receita" src="../images/receitas/lanche-04.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="corpo" id="dicas">
+                    <div class="titulo-categoria">
+                        <p>Exibindo: </p>
+                        <p class="t-categoria">Dicas</p>
+                    </div>
                     <div class="receita">Dica 1</div>
                     <div class="receita">Dica 2</div>
                     <div class="receita">Dica 3</div>
@@ -153,32 +288,71 @@
 
                 <div class="recomendados">
                     <div class="carrossel-recomendados">
-                        <div class="label-carrossel">
+                        <h4 class="label-carrossel">
                             Recomendados para você
-                        </div>
+                        </h4>
                         <div class="owl-carousel owl-theme">
                             <div class="item">
-                                <img class="sugestao" src="../../images/quadradas/lasanha.jpeg" alt="">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-01.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="sugestao" src="../../images/quadradas/abobrinha.jpeg" alt="">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-02.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="sugestao" src="../../images/quadradas/chapati.jpeg" alt="">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-03.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="sugestao" src="../../images/quadradas/cha.jpeg" alt="">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-04.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="sugestao" src="../../images/quadradas/batata-crocante.jpeg" alt="">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-05.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="sugestao" src="../../images/quadradas/milho.jpeg" alt="">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-06.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="sugestao" src="../../images/quadradas/oatmeal.jpeg" alt="">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-07.jpg" alt="">
                             </div>
-
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-08.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-09.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-10.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-11.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-12.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-13.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-14.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-15.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-16.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-17.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-18.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-19.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="sugestao" src="../../images/quadradas/carrossel-20.jpg" alt="">
+                            </div>
+                            
                         </div>
                     </div>
                 </div>            

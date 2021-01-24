@@ -1,3 +1,7 @@
+:root{
+    --verde: #23b100;
+}
+
 /* base */
 *{
     margin: 0;
@@ -22,6 +26,36 @@ button{
     cursor: pointer;
 }
 
+.tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: #838383;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.fav{
+    top: 70%;
+    left: 10%; 
+}
+
+.menu{
+    top: 70%;
+    left: 5%;
+}
+
+.usuario:hover .tooltiptext {
+    visibility: visible;
+}
+  
+.botaoTooltipFav:hover .tooltiptext {
+    visibility: visible;
+}
+
 
 
 
@@ -29,7 +63,7 @@ button{
 
 header .barra{
     display: flex;
-    background-color:#FFFFFF; /* rgb(35, 177, 0);*/
+    background-color:#FFFFFF;
     /* color:rgb(233, 233, 233); */
     height: 4rem;
     width: 100vw;
@@ -105,6 +139,7 @@ header .barra-container{
     height: 1px;
     margin-bottom: 0.5rem;
 }
+
 .item-menu{
     /* width: 8rem; */
     padding: 0 1rem 0 0;
@@ -184,7 +219,7 @@ header .barra-container{
     font-size: 40px;
     font-weight: bolder;
     font-family: 'Amatic SC', cursive;
-    color: rgb(35, 177, 0);
+    color: var(--verde);
 }
 
 
@@ -241,9 +276,9 @@ header .barra-container{
 }
 
 .container-categorias .c:nth-child(2){
-    background: url(../../images/categorias/sam-moqadam-wg551YMfeOc-unsplash-01.jpeg);
+    background: url(../../images/categorias/sam-moqadam-PcI8L5CG5XA-unsplash-02.jpeg);
     background-size: cover;
-    background-position: unset;
+    background-position: center;
 }
 
 .container-categorias .c:nth-child(3){
@@ -318,15 +353,65 @@ header .barra-container{
 .corpo{
     display: none;
     flex-direction: column;
-    margin: 0 2rem;
+    margin: 0 8rem;
+}
+
+.titulo-categoria{
+    color: #3d3d3d;
+    width: 100%;
+    display:flex;
+    align-items: baseline;
+    margin: 1rem 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.t-categoria{
+    font-weight: bolder;
+    margin-left: 0.5rem;
+    font-size: 1.2em;
 }
 
 .receita{
-    height: 5rem;
+    /* height: 13rem; */
     background-color: #FFFFFF;
     margin-bottom: 1rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.titulo-receita{
+    margin-bottom:1.5rem;
+    font-size: 1.5em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
 }
 
+.intro-receita{
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.foto-receita{
+    width: 12rem;
+    /* border-radius: 50%; */
+    border-radius: 3px;
+    border: 1px solid #ebebeb; 
+}
+
+.texto-receita-esq{
+    padding: 0 3rem;
+}
+
+.texto-receita-dir{
+    padding: 0 3rem 0 0 ;
+}
+
+.marcar-favorito{
+    font-size: 1.3rem;
+}
 
 
 /* carrossel */
@@ -336,9 +421,9 @@ header .barra-container{
 }
 
 .label-carrossel{
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-bottom: 1rem;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
 }
 
 .recomendados{
@@ -350,10 +435,15 @@ header .barra-container{
     border-radius: 5px;
 }
 
+sugestao:hover{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)100%);
+}
+
+/* 
 .owl-item{
     height: 9rem !important;
     width: 9rem !important;
-}
+} */
 
 .item:hover{
     background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)100%);
