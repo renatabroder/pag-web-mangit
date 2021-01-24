@@ -1,6 +1,6 @@
 $('.owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
+    loop:true,
+    margin:20,
     nav:false,
     autoplay:false,
     autoplayTimeout:2500,
@@ -54,9 +54,17 @@ searchButton = (() =>{
     let campoVisivel = $('#search-field').css('max-width') == '0px' ? false : true;
     let valCampo = $('#search-field').val()
 
-    if(!campoVisivel) $('#search-field').removeClass('hide')
-    else if(campoVisivel && ( valCampo == '')) $('#search-field').addClass('hide')
-    else if(valCampo != '') pesquisa();        
+    if(!campoVisivel){
+        $('#search-field').removeClass('hide');
+        if($('.logo').css('font-size') == '36px') $('.logo-container').css('display', 'none')
+    }
+    else if(campoVisivel && ( valCampo == '')){
+        $('#search-field').addClass('hide')
+        if($('.logo').css('font-size') == '36px') $('.logo-container').css('display', 'block')
+    }
+    else if(valCampo != ''){
+        pesquisa();
+    } 
 });
 
 focusoutSearchButton = (() =>{
