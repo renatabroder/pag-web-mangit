@@ -30,7 +30,8 @@ home = (() => {
     $('.l').removeClass('label-categoria-peq').addClass('label-categoria');
 
     $('.container-conteudo').css('min-height', 'calc(100vh - 4rem)');
-    
+    $('.container-receitas').css('padding-top', '0');
+
     $('.recomendados').css('display', 'none');
     
     $('.barra-footer').css('display', 'none');
@@ -77,6 +78,7 @@ cliqueCategoria = ((tipo) => {
 
     $('.barra-footer').css('display', 'flex');
     $('.container-conteudo').css('min-height', 'calc(100vh - 9rem)');
+    $('.container-receitas').css('padding-top', '1.5rem');
 
     $('.recomendados').css('display', 'block');
 

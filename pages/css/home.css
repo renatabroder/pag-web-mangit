@@ -237,7 +237,7 @@ header .barra-container{
 /* categorias */
 
 .container-categorias{
-    height: calc(100vh-4rem);
+    /* height: calc(100vh - 4rem); */
     /* padding: 1rem; */
     box-sizing: border-box;
 }
@@ -349,10 +349,6 @@ header .barra-container{
 
 
 /* corpo */
-
-.container-receitas{
-    padding-top: 1.5rem;
-}
 
 .corpo{
     display: none;
@@ -694,13 +690,16 @@ footer .barra-footer{
         margin-right: 0.5rem;
     }
 
-    .body{
-        min-width: 360px;
-    }
 }
 
-@media(max-width: 290px){
-    .body{
+@media(max-width: 291px){
+    body{
         min-width: 290px;
+        width: 290px;
+    }
+
+    header .barra{
+        min-width: 290px;
+        width: 290px;
     }
 }
